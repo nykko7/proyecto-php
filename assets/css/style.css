@@ -1,0 +1,280 @@
+/*FUENTES*/
+@font-face{
+    font-family: "fajala";
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GENERALES*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Helvetica, Arial;
+    text-decoration: none;    
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body{
+    background: 
+    linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #232323;
+}
+
+.alerta{
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background: green;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.alerta-error{
+    background: red;
+}
+
+.fecha{
+    color: #44724c;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/*CABECERA*/
+#cabecera{
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+}
+/*LOGOTIPO*/
+#logo{
+    float:left;
+    width: 540px;
+    height: 80px;
+}
+
+#logo a{
+    font-family: "fajala", Helvetica;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #237A57;
+    text-shadow: 0px 0px 0px #ccc, 1px 1px 0px #ccc, 2px 2px 0px #ccc;
+    transition: all 500ms;
+    line-height: 80px;
+    margin-left: 20px;
+}
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px #ccc, -1px -1px 0px #ccc, -2px -2px 0px #ccc;
+}
+
+/*MENU*/
+#menu{
+    clear: both;
+    width: 100%;
+    height: 45px;
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid #003326;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #093028;
+    overflow: hidden;
+    
+}
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li{
+    float: left;
+    line-height: 44px;
+    border-right: 1px solid #093028;
+}
+
+#menu ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+#menu ul li a:hover{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%); 
+}
+
+/*CONTENIDO*/
+
+#contenedor{
+    width: 80%;
+    /*min-height: auto;*/
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+/*BARRA LATERAL*/
+#sidebar{
+    float: right;
+    width: 25%;
+    height: auto;
+    margin-right:20px;
+}
+
+/*PRINCIPAL*/
+#principal{
+    float: left;
+    width: 60%;
+    min-height: 550px;
+    background: #eee;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px whitesmoke;
+    margin-left: 20px;
+    padding:20px;
+    overflow: hidden;
+}
+
+#principal h1{
+    font-size: 40px;
+    color: #444;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajala";
+}
+#principal h2{
+    font-size: 20px;
+    color: #237A57;
+    text-shadow: 1px 1px 2px #ccc;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-family: "fajala";
+}
+
+#principal p{
+    margin-top: 8px;
+}
+
+#principal a:not(.boton):not(.boton-naranja):not(.boton-rojo){
+    color: #333;
+}
+
+#ver-todas a{
+    display: block;
+    border-radius: 2px;
+    padding: 10px;
+    color: white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    width: 160px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+/*BARRA LATERAL*/
+
+.bloque{
+    display: block;
+    width: 85%;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 1px whitesmoke, 0px 3px 7px whitesmoke , 0px 0px 1px #FFFFFF inset, 0px -3px 2px white inset;
+}
+
+.bloque h3{
+    font-family: "fajala";
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+label,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    width: 95%;
+    margin-top:2px;
+    margin-bottom: 2px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+input[type="button"],
+input[type="submit"],
+.boton{
+    margin-top:10px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 2px;
+    padding: 10px;
+    color: white !important;
+    background: #237A57;
+    border: 1px solid #003333;
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+}
+
+#principal .boton{
+    color: white !important;
+}
+
+
+
+
+.boton-naranja{
+    color:white !important;
+    border-color: #bd7d08;
+    background: orange;    
+}
+
+.boton-azul{
+    color:white !important;
+    border-color: blue;
+    background: #156785;    
+}
+.boton-rojo{
+    color:white !important;
+    border-color: red;
+    background: #990000;    
+}
+
+/*PIE DE PAGINA*/
+#pie{
+    clear: both;
+    width: 40%;
+    margin: 0px auto;
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #237A57, #093028); 
+    border: 3px solid #c9c9c9;
+    border-bottom: none;
+    border-radius: 8px 8px 0px 0px;    
+    height: auto;
+    padding: 15px;
+    text-align: center;
+}
+
