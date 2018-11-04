@@ -1,0 +1,4 @@
+"id";"nombre";"apellidos";"email";"password";"fecha"
+1;"asd";"asd";"asd@asd.com";"$2y$04$ycLzH1ULgj7U1mVywJxpIeHUtnlVCeedFaLry0Wk6n9ndRAGIt2M2";"2018-10-29"
+2;"fast""""";"asd"" ""asd'asd''asd";"asd@asdad.com";"$2y$04$WfCRmLdAbqCmaLKA3194weW.BwYr2Rb0ZIWH1ng.82AYr5jcNxLm.";"2018-10-29"
+3;"hola";"hola";"hola@hola.com";"$2y$04$E4OH1m6RMnYRVtrg/6i.eeihaHYgt6OTgF1mkRp6wrFeRiM4TJsZS";"2018-10-29"
